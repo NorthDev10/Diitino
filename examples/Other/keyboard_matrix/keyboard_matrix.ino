@@ -9,10 +9,10 @@ const byte hexData[4] = {0xFE, 0xFD, 0xFB, 0xF7};
 // по цій масці дізнаємося, в якому рядку була натиснута кнопка
 const byte maskRowData[4] = {0x10, 0x20, 0x40, 0x80};
 const char keymap[4][4] = {
-                            "123A",
-                            "456B",
-                            "789C",
-                            "*0#D"
+                            "159C",
+                            "260D",
+                            "37AE",
+                            "48BF"
                           };
 
 void setup() { // це функція виконується 1 раз

@@ -150,7 +150,7 @@ void Diitino_MCP23017::digitalWrite(uint8_t pin, uint8_t val) {
   }
 }
 
-byte Diitino_MCP23017::digitalRead(uint8_t pin) {
+bool Diitino_MCP23017::digitalRead(uint8_t pin) {
   if(pin >= 84 && pin <= 99) {
     if(this->readRG(pinMap[pin].adrPORT) & pinMap[pin].mask) return HIGH;
     return LOW;

@@ -35,7 +35,7 @@ class Diitino_MCP23017 {
     void init(byte i2cAdr);
     void pinMode(uint8_t pin, uint8_t mode);
     void digitalWrite(uint8_t pin, uint8_t val);
-    byte digitalRead(uint8_t pin);
+    bool digitalRead(uint8_t pin);
   protected:
     void writeRG(byte adrRG, byte data);
     byte readRG(byte adrRG);
